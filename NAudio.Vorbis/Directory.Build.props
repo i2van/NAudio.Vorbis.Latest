@@ -1,0 +1,7 @@
+﻿<Project>
+  <PropertyGroup>
+    <Version>1.5.1.0</Version>
+    <PackageReleaseNotes>NAudio.Core 2.2.1
+NVorbis 0.10.5</PackageReleaseNotes>
+  </PropertyGroup>
+</Project>

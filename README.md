@@ -1,22 +1,23 @@
-NAudio.Vorbis    [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/naudio/Vorbis?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
--------
+# NAudio.Vorbis.Latest
 
-NAudio.Vorbis is a convenience wrapper to enable easy integration of [NVorbis](https://github.com/ioctlLR/NVorbis) into NAudio projects.
+[![Latest build](https://github.com/i2van/NAudio.Vorbis.Latest/workflows/build/badge.svg)](https://github.com/i2van/NAudio.Vorbis.Latest/actions)
+[![NuGet](https://img.shields.io/nuget/v/NAudio.Vorbis.Latest)](https://www.nuget.org/packages/NAudio.Vorbis.Latest)
+[![Downloads](https://img.shields.io/nuget/dt/NAudio.Vorbis.Latest)](https://www.nuget.org/packages/NAudio.Vorbis.Latest)
+[![License](https://img.shields.io/badge/license-MIT-yellow)](https://opensource.org/licenses/MIT)
 
-To use:
+[NAudio.Vorbis.Latest](https://github.com/i2van/NAudio.Vorbis.Latest) is a convenience wrapper to enable easy integration of [NVorbis](https://github.com/NVorbis/NVorbis) into [NAudio](https://github.com/naudio/NAudio) projects. [Drop-in replacement](https://en.wikipedia.org/wiki/Drop-in_replacement) for [NAudio.Vorbis](https://www.nuget.org/packages/NAudio.Vorbis) NuGet package.
 
-```cs
-// add a reference to NVorbis.dll
-// add a reference to NAudio.Vorbis.dll
+## Example
 
-using (var vorbisStream = new NAudio.Vorbis.VorbisWaveReader("path/to/file.ogg"))
-using (var waveOut = new NAudio.Wave.WaveOutEvent())
-{
-    waveOut.Init(vorbisStream);
-    waveOut.Play();
-   
-    // wait here until playback stops or should stop
-}
+```csharp
+using NAudio.Vorbis;
+using NAudio.Wave;
+
+using var vorbisWaveReader = new VorbisWaveReader("path/to/file.ogg");
+using var waveOutEvent = new WaveOutEvent();
+
+waveOutEvent.Init(vorbisWaveReader);
+waveOutEvent.Play();
+
+// Wait here until playback stops or should stop.
 ```
-
-If you have any questions or comments, feel free to join us on Gitter.  If you have any issues or feature requests, please submit them in the issue tracker.
