@@ -30,7 +30,7 @@
     <Authors>Andrew Ward, Ivan Ivon</Authors>
     <Company>$(Authors)</Company>
     <Description>NAudio support for Vorbis</Description>
-    <Copyright>Copyright © Andrew Ward 2021, $([System.DateTime]::Now.Year) Ivan Ivon</Copyright>
+    <Copyright>Copyright © Andrew Ward 2021, 2024-$([System.DateTime]::Now.Year) Ivan Ivon</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/i2van/NAudio.Vorbis.Latest</PackageProjectUrl>
     <RepositoryUrl>https://github.com/i2van/NAudio.Vorbis.Latest</RepositoryUrl>
