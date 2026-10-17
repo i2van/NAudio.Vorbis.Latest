@@ -1,7 +1,7 @@
 ﻿<Project>
   <PropertyGroup>
-    <Version>1.6.0.0</Version>
-    <PackageReleaseNotes>NAudio.Core 2.3.0
+    <Version>2.4.0.0</Version>
+    <PackageReleaseNotes>NAudio.Core 2.4.0
 NVorbis 0.10.5
 System.Memory 4.6.3</PackageReleaseNotes>
   </PropertyGroup>
